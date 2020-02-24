@@ -1,0 +1,29 @@
+# A minimal AWS credentials file (for example, ~/.aws/credentials) with the following contents 
+# adjusted to your preferred region and output format.
+# Run aws configure with just the region and output set.
+
+
+# When the minimal aws configure is done, credentials is created , you can check below
+cd .aws/
+vi credentials
+
+# Below are the dependencies before running the samlfile for CLI access
+sudo yum install python27
+sudo yum install python3 -y
+python --version
+pip install --upgrade boto beautifulsoup4 requests --user
+sudo pip3 install boto
+sudo pip3 install boto3
+
+
+# Dependencies are below for python to run successfully
+sudo pip3 install requests
+sudo pip3 install bs4
+sudo pip3 install urlparse
+sudo pip3 install lxml
+aws s3 ls --profile saml
+
+
+#Run the script with the command below:
+chmod a+x saml.py
+python3 saml.py
