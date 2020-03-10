@@ -27,7 +27,7 @@ outputformat = 'json'
 
 # awsconfigfile: The file where this script will store the temp
 # credentials under the saml profile
-awsconfigfile = '/Users/AAmusa/.aws/credentials'
+awsconfigfile = '/Users/username/.aws/credentials'
 
 # SSL certificate verification: Whether or not strict certificate
 # verification is done, False should only be used for dev/test
@@ -36,7 +36,6 @@ sslverification = True
 
 # idpentryurl: The initial url that starts the authentication process.
 #idpentryurl = 'https://idp1.example.com/adfs/ls/IdpInitiatedSignOn.aspx?loginToRp=urn:amazon:webservices'
-idpentryurl = 'https://authgate.tracfone.com/adfs/ls/IdpInitiatedSignOn.aspx?loginToRp=urn:amazon:webservices'
 
 # Uncomment to enable low level debugging
 #logging.basicConfig(level=logging.DEBUG)
